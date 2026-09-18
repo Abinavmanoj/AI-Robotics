@@ -1,14 +1,7 @@
-Robot_name ="robo1"
-battery = 80 
-speed = 20
-obstacle_distance = 20
-
-print(Robot_name)
-print(str(battery) + "%")
-print(str(speed) + "cm/s")
-print(str(obstacle_distance) + " cm")
-
-if obstacle_distance >= 100:
-    print("no move.")
-else:
-    print("yes stop.")
+obstacle_distance = int(input("Enter the obstacle_distance: "))
+if obstacle_distance < 30:
+    print(" stop.")
+elif 30 <= obstacle_distance <= 70:
+    print("slow.")
+else: 
+    print("move.")
