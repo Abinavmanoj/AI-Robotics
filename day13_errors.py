@@ -2,7 +2,7 @@ while True:
     try:
         distance = int(input("Enter obstacle distance: "))
         print("Distance:", distance)
-        break
+        
         if distance < 30:
             print("stop")
             break
@@ -15,4 +15,4 @@ while True:
 
     except ValueError:
         print("please enter a number.")
-             
+        break    
