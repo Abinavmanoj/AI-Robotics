@@ -5,3 +5,11 @@ print("Number of reading:", len(sensor_data))
 print("maximum:", np.max(sensor_data))
 print("minimum:", np.min(sensor_data))
 print("Average:", np.mean(sensor_data))
+
+for i in sensor_data:
+    if i < 20:
+        print(i, "decision: STOP")
+    elif i < 50:
+        print(i, "decision: SLOW")
+else:
+        print(i, "decision: FAST")
