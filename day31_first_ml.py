@@ -20,7 +20,7 @@ y = np.array([
     "FAST",
     "FAST"
 ])
-model = KNeighborsClassifier(n_neighbors=3)
+model = KNeighborsClassifier(n_neighbors=5)
 model.fit(x, y)
 prediction = model.predict([[35]])
 print("Prediction for distance 35:", prediction[0])
