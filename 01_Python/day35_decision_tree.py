@@ -40,7 +40,7 @@ x_train, x_test, y_train, y_test = train_test_split(
     stratify=y
 )
 model = DecisionTreeClassifier(
-    max_depth=2,
+    max_depth=3,
     random_state=42
 )
 model.fit(x_train, y_train)
